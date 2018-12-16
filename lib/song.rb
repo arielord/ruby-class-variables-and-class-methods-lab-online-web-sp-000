@@ -33,7 +33,9 @@ class Song
   end
   
   def self.artist_count
-    @@artists.uniq.length
+    counting_artist = Hash.new
+    @@genres.each {|artist| counting_artist.key?(artist) ? counting_artist[artist] += 1 : counting_artist[artist] = 1}
+    counting_artist
   end
   
 end
