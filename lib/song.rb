@@ -24,7 +24,7 @@ class Song
   
   def self.genre_count
     counting_genre = {}
-    @@genres.each {|genre| counting_genre.key? ? counting_genre[genre] += 1: counting_genre = 0}
+    @@genres.each {|genre| counting_genre.key? ? counting_genre[genre] += 1 : counting_genre = 0}
     counting_genre
   end
   
