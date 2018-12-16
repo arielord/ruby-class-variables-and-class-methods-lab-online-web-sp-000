@@ -9,7 +9,7 @@ class Song
     self.artist = artist
     self.genre = genre
     
-    @@song_count += 1
+    @@count += 1
     @@genres << @genre
     @@artists << @artist
   end
